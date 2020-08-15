@@ -20,4 +20,10 @@ public class DemoWebservice {
 		L.info("Start : DemoWebservice.getName()");
 		return "Ravi Demo";
 	}
+
+	@RequestMapping(value="/name", method=RequestMethod.DELETE)
+	public String deleteName() {
+		L.info("Start : DemoWebservice.getName()");
+		return "Ravi Demo";
+	}
 }
