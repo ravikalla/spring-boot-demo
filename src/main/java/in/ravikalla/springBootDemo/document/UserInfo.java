@@ -1,6 +1,11 @@
-package in.ravikalla.springBootDemo.entity;
+package in.ravikalla.springBootDemo.document;
 
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+@Document
 public class UserInfo {
+	@Id
 	private Long id;
 	private String name;
 	private Long age;
